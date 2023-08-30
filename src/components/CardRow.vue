@@ -16,7 +16,7 @@ defineProps({
       <div class="w-36 h-28">
         <RouterLink :to="{ name: 'product', params: { slug } }">
           <img
-            :src="'http://localhost:8000/' + cover"
+            :src="'https://vn-store.onrender.com/' + cover"
             alt="test"
             class="w-full h-full object-fill rounded-2xl"
           />
