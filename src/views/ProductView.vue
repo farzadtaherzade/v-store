@@ -20,7 +20,7 @@ const addToCart = () => {
     <div class="flex flex-col md:flex-row h-[30rem] gap-20">
       <div class="basis-6/12 w-full">
         <img
-          :src="'http://localhost:8000/' + productStore.product.cover"
+          :src="'https://vn-store.onrender.com/' + productStore.product.cover"
           :alt="productStore.product.title"
           class="w-full rounded-lg object-fill h-[30rem]"
         />
