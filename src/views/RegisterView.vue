@@ -3,8 +3,10 @@ import { computed, reactive } from "vue";
 import useVuelidate from "@vuelidate/core";
 import { required, minLength, sameAs, email } from "@vuelidate/validators";
 import { useAuthStore } from "../stores/auth";
+import { useRouter } from "vue-router";
 
 const authStore = useAuthStore();
+const router = useRouter();
 
 const formData = reactive({
   username: "",
@@ -34,6 +36,7 @@ const submitForm = async () => {
   const result = await v$.value.$validate();
   if (result) {
     await authStore.register(formData);
+    router.push({ name: login });
   } else {
     alert("error, form not submited");
   }

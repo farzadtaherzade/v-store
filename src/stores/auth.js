@@ -21,9 +21,6 @@ export const useAuthStore = defineStore("auth", {
     },
     async register(data) {
       const result = await axios.post("/auth/register", data);
-      if (result.status == 201) {
-        this.setItemToLocal(result.data.accessToken);
-      }
       return result.status;
     },
     async checkToken() {
