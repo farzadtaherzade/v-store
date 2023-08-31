@@ -4,7 +4,7 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import axios from "axios";
 
-axios.defaults.baseURL = import.meta.env.URL_BACKEND;
+axios.defaults.baseURL = import.meta.env.VITE_URL_BACKEND;
 
 import App from "./App.vue";
 import router from "./router";
