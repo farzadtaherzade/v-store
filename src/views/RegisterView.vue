@@ -36,7 +36,7 @@ const submitForm = async () => {
   const result = await v$.value.$validate();
   if (result) {
     await authStore.register(formData);
-    router.push({ name: login });
+    router.push({ name: "login" });
   } else {
     alert("error, form not submited");
   }
