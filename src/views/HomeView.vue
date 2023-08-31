@@ -18,7 +18,7 @@ onMounted(async () => {
 <template>
   <div class="container mx-auto mt-10">
     <section
-      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-24"
+      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-24 p-10"
     >
       <CardItem
         v-for="product in products"

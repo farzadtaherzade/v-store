@@ -8,8 +8,8 @@ const useProduct = useProductStore();
 
 <template>
   <div class="container mx-auto mt-10">
-    <div class="grid grid-cols-12 gap-12">
-      <div class="grid col-span-12 md:col-span-8 gap-5">
+    <div class="grid grid-cols-12 gap-12 px-10">
+      <div class="grid col-span-10 md:col-span-12 lg:col-span-8 gap-5">
         <CardRow
           v-for="cart in useProduct.carts"
           :key="cart._id"
@@ -22,7 +22,12 @@ const useProduct = useProductStore();
           @decrease="useProduct.decreaseQuantity"
         />
       </div>
-      <div class="grid col-span-12 md:col-span-4">
+      <div
+        class="grid lg:col-span-4 md:col-span-12"
+        :class="[
+          useProduct.carts.length > 0 ? 'col-span-10 sm:col-span-12 ' : '',
+        ]"
+      >
         <CartSummary />
       </div>
     </div>

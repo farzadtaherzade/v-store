@@ -7,7 +7,7 @@ const authStore = useAuthStore();
 </script>
 
 <template>
-  <header class="bg-white drop-shadow-lg w-full p-5 fixed top-0 left-0">
+  <header class="bg-white drop-shadow-lg w-full p-5 fixed top-0 left-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
       <RouterLink :to="{ name: 'home' }" class="text-xl font-bold"
         >VueShop</RouterLink

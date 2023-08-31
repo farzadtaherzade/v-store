@@ -18,7 +18,7 @@ async function checkoutHandler() {
 
 <template>
   <div
-    class="w-full h-auto bg-white drop-shadow-2xl rounded-xl flex flex-col gap-y-7 p-10"
+    class="h-auto bg-white drop-shadow-2xl rounded-xl flex flex-col gap-y-7 p-10"
   >
     <p class="font-bold text-3xl">Cart Summary</p>
     <div class="flex items-center justify-between">
