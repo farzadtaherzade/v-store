@@ -18,7 +18,7 @@ const productStore = useProductStore();
     <div class="w-full h-[15rem]">
       <RouterLink :to="{ name: 'product', params: { slug } }">
         <img
-          :src="'https://vn-store.onrender.com/' + cover"
+          :src="cover"
           alt="test"
           class="w-full h-full object-cover"
         />
